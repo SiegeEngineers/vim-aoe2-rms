@@ -12,7 +12,7 @@ Using vim-plug:
 
 ```vim
 call plug#begin('~/.vim/plug')
-Plug 'goto-bus-stop/vim-aoe2-rms'
+Plug 'SiegeEngineers/vim-aoe2-rms'
 call plug#end()
 ```
 
