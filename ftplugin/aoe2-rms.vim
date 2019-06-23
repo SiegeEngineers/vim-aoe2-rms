@@ -15,4 +15,12 @@ let b:undo_ftplugin = "setl cms< def< inc< inex< ofu< sua<"
 setlocal iskeyword+=<,>
 setlocal suffixesadd=.rms
 
+if executable("rms-check-lsp")
+  au User lsp_setup call lsp#register_server({
+        \ 'name': 'rms-check',
+        \ 'cmd': {server_info->['rms-check-lsp']},
+        \ 'whitelist': ['aoe2-rms'],
+        \ })
+endif
+
 " vim:set sw=2:
