@@ -15,10 +15,10 @@ let b:undo_ftplugin = "setl cms< def< inc< inex< ofu< sua<"
 setlocal iskeyword+=<,>
 setlocal suffixesadd=.rms
 
-if executable("rms-check-lsp")
+if executable("rms-check")
   au User lsp_setup call lsp#register_server({
         \ 'name': 'rms-check',
-        \ 'cmd': {server_info->['rms-check-lsp']},
+        \ 'cmd': {server_info->[&shell, &shellcmdflag, 'rms-check --server']},
         \ 'whitelist': ['aoe2-rms'],
         \ })
 endif
