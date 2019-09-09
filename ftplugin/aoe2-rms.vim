@@ -18,7 +18,7 @@ setlocal suffixesadd=.rms
 if executable("rms-check")
   au User lsp_setup call lsp#register_server({
         \ 'name': 'rms-check',
-        \ 'cmd': {server_info->[&shell, &shellcmdflag, 'rms-check --server']},
+        \ 'cmd': {server_info->[&shell, &shellcmdflag, 'rms-check server']},
         \ 'whitelist': ['aoe2-rms'],
         \ })
 endif
