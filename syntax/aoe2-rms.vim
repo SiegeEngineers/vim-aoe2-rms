@@ -25,6 +25,7 @@ syntax keyword rmsCommand
   \ create_terrain
   \ create_object
   \ create_connect_all_players_land
+  \ create_connect_to_nonplayer_land
   \ create_connect_teams_land
   \ create_connect_same_land_zones
   \ create_connect_all_lands
@@ -72,11 +73,33 @@ syntax keyword rmsAttribute
   \ terrain_cost
   \ terrain_size
   \ spacing
+  \ assign_to
+  \ place_on_forest_zone
+  \ avoid_forest_zone
+  \ find_closest
+  \ actor_area
+  \ avoid_actor_area
+  \ actor_area_to_place_in
+  \ actor_area_radius
+  \ avoid_all_actor_areas
+  \ force_placement
+  \ base_layer
+  \ layer_to_place_on
   \ containedin=rmsCommandAttributes contained
 
 syntax keyword rmsTopLevelAttribute
   \ random_placement
+  \ direct_placement
+  \ circle_placement
+  \ circle_radius
   \ grouped_by_team
+  \ color_correction
+  \ enable_waves
+  \ guard_state
+  \ terrain_state
+  \ effect_amount
+  \ effect_percent
+  \ terrain_mask
   \ base_terrain
   \ min_number_of_cliffs
   \ max_number_of_cliffs
